@@ -14,7 +14,7 @@ export default function ConteudoPrincipal() {
   useEffect(() => {
     setIsLoading(true);
       setTimeout(() => {
-      fetch('http://localhost:3000/artistas')
+      fetch('https://site-musicos-wl7h.vercel.app/artistas')
       .then(res => res.json())
       .then(data => {setArtistas(data), console.log(data)})
       .catch(err => console.log(err))

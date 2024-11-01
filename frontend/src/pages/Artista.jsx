@@ -14,7 +14,7 @@ export default function Artista() {
         setIsLoading(true);
             const puxarArtista = async () => {
         try{
-            const artista = await fetch(`http://localhost:3000/artistas/${id}`);
+            const artista = await fetch(`https://site-musicos-wl7h.vercel.app/artistas/${id}`);
             const resposta = await artista.json();
             setArtista(resposta);
             }
