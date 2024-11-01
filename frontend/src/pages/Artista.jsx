@@ -11,7 +11,6 @@ export default function Artista() {
     const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
-        setIsLoading(true);
             const puxarArtista = async () => {
         try{
             const artista = await fetch(`https://site-musicos-wl7h.vercel.app/artistas/${id}`);
